@@ -8,7 +8,11 @@ apt-get install tmux -y
 apt-get install mosh -y
 apt-get install firewalld -y
 ```
-
+Configure git:
+```
+git config --global user.email "tvquizphd@gmail.com"
+git config --global user.name "TVQuizPhD"
+```
 Configure tmux and vim settings:
 
 ```
