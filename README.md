@@ -1,10 +1,12 @@
+These instructions are for Debian or Ubuntu.
+
 ## Set up server for development
 
 ```
-yum install git -y
-yum install tmux -y
-yum install epel-release -y
-yum install mosh -y
+apt-get install git -y
+apt-get install tmux -y
+apt-get install mosh -y
+apt-get install firewalld -y
 ```
 
 Configure tmux and vim settings:
@@ -41,7 +43,9 @@ After that, copy the contents of `~/.ssh/id_rsa` into https://github.com/setting
 Finally, clone the repository: 
 
 ```
-git@github.com:ORGANIZATION/REPOSITORY.git
-cd time-hostess
-git remote set-url origin tvquizphd:ORGANIZATION/REPOSITORY.git
+ORGANIZATION=...
+REPOSITORY=...
+git clone git@github.com:$ORGANIZATION/$REPOSITORY.git
+cd $REPOSITORY
+git remote set-url origin tvquizphd:$ORGANIZATION/$REPOSITORY.git
 ```
