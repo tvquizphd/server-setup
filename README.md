@@ -12,6 +12,7 @@ Configure git:
 ```
 git config --global user.email "tvquizphd@gmail.com"
 git config --global user.name "TVQuizPhD"
+git config --global core.editor "vim"
 ```
 Configure tmux and vim settings:
 
