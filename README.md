@@ -54,3 +54,16 @@ git clone git@github.com:$ORGANIZATION/$REPOSITORY.git
 cd $REPOSITORY
 git remote set-url origin tvquizphd:$ORGANIZATION/$REPOSITORY.git
 ```
+
+### Optional steps
+
+In cases where memory is a limiting factor, add some swap space:
+
+```
+fallocate -l 1G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+cp /etc/fstab /etc/fstab.bak
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```
