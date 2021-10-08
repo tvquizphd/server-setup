@@ -43,7 +43,7 @@ Create an SSH key:
 ssh-keygen -t rsa -b 4096 -C "tvquizphd@gmail.com"
 ```
 
-After that, copy the contents of `~/.ssh/id_rsa` into https://github.com/settings/keys.
+After that, copy the contents of `~/.ssh/id_rsa.pub` into https://github.com/settings/keys.
 
 Finally, clone the repository: 
 
