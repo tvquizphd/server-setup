@@ -67,3 +67,11 @@ swapon /swapfile
 cp /etc/fstab /etc/fstab.bak
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```
+
+In cases where storage is a limiting factor, reduce log size:
+
+Set `SystemMaxUse=50M` in `/etc/systemd/journald.conf`.
+
+Remove any large cached files found with `du -ahd1 ./.cache/`.
+
+Run `yarn cache clean` to clean yarn cache.
