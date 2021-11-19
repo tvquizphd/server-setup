@@ -17,7 +17,7 @@ git config --global core.editor "vim"
 Configure tmux and vim settings:
 
 ```
-echo "set-option -g prefix C-g" > ~/.tmux.conf
+echo "set-option -g prefix C-t" > ~/.tmux.conf
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 wget -O ~/.vimrc https://gist.githubusercontent.com/tvquizphd/2b3632cf7c12d62c32d84c8ce1656940/raw/abf667c06cf4a56fe77617019efb80bf2a117e9f/.vimrc
 vim -c "PluginInstall"
