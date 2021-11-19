@@ -14,6 +14,7 @@ Download and install any npm project.
 ```
 REPO=...
 git clone tvquizphd:tvquizphd/$REPO
+cd $REPO
 yarn install
 ```
 
