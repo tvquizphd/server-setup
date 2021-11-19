@@ -12,7 +12,8 @@ npm install --global yarn
 Download and install any npm project.
 
 ```
-git clone tvquizphd:tvquizphd/project
+REPO=...
+git clone tvquizphd:tvquizphd/$REPO
 yarn install
 ```
 
