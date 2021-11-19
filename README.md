@@ -50,9 +50,8 @@ Finally, clone the repository:
 ```
 ORGANIZATION=...
 REPOSITORY=...
-git clone git@github.com:$ORGANIZATION/$REPOSITORY.git
+git clone tvquizphd:$ORGANIZATION/$REPOSITORY.git
 cd $REPOSITORY
-git remote set-url origin tvquizphd:$ORGANIZATION/$REPOSITORY.git
 ```
 
 ### Optional steps
@@ -73,6 +72,6 @@ In cases where storage is a limiting factor, reduce log size:
 Set `SystemMaxUse=50M` in `/etc/systemd/journald.conf`.
 Then run `journalctl --vacuum-size=50M` to clear excess logs.
 
-Remove any large cached files found with `du -ahd1 ./.cache/`.
+Remove any large cached files found with `du -ahd1 ~/.cache/`.
 
 Run `yarn cache clean` to clean yarn cache.
